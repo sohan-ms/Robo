@@ -1,11 +1,12 @@
 *** Settings ***
 Resource    ../Pages/OnDemand.robot
-Resource    ../../Variables/locator_variables.robot
+Resource    ../../Variables/locators_variables.robot
 Resource    ../../Variables/common_variables.robot
 
 *** Keywords ***
 Click on OnDemand module
     ondemand.navigate to ondemand module
+
 
 #Drag and drop a series on to Calender
 #    planner.Move Calender To Future

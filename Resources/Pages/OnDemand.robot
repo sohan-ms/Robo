@@ -6,7 +6,7 @@ Library    DateTime
 Resource    helper.robot
 Resource     ../../Variables/common_variables.robot
 Resource    ../../Variables/env_variables.robot
-Resource    ../../Variables/locator_variables.robot
+Resource    ../../Variables/locators_variables.robot
 
 *** Keywords ***
 Open Vod End Point
@@ -32,7 +32,6 @@ Input Password
     SeleniumLibrary.Input Text    ${LOC_INPUT_PASSWORD}    ${user_password}
 
 Click Signin
-    set browser implicit wait    15s
     SeleniumLibrary.Wait Until Element Is Visible    ${LOC_SIGNIN_BTN}
     SeleniumLibrary.Click Element    ${LOC_SIGNIN_BTN}
     BuiltIn.Wait Until Keyword Succeeds     60 s     1 s    SeleniumLibrary.Wait Until Element Is Visible    ${LOC_WELCOME_MSG}
@@ -40,4 +39,12 @@ Click Signin
     BuiltIn.Log    Login successful
 
 Navigate to OnDemand Module
-    SeleniumLibrary.click element    ${LOC_ONDEMAND_TAB}
+#    sleep    10s
+#    SeleniumLibrary.mouse over     ${loc_ondemand_tab}
+#    sleep    20s
+    SeleniumLibrary.Click Element    ${LOC_ONDEMAND_TAB}
+    sleep    20s
+    SeleniumLibrary.Click Element    ${LOC_PLATFORM_TAB}
+
+    SeleniumLibrary.Click Element    ${LOC_ADDPLATFORM_BTN}
+
