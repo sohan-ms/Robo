@@ -41,10 +41,10 @@ Click Signin
 Navigate to OnDemand Module
 #    sleep    10s
 #    SeleniumLibrary.mouse over     ${loc_ondemand_tab}
-#    sleep    20s
-    SeleniumLibrary.Click Element    ${LOC_ONDEMAND_TAB}
     sleep    20s
+    SeleniumLibrary.Click Element    ${LOC_ONDEMAND_TAB}
+    sleep    10s
     SeleniumLibrary.Click Element    ${LOC_PLATFORM_TAB}
-
+    sleep    20s
     SeleniumLibrary.Click Element    ${LOC_ADDPLATFORM_BTN}
 
