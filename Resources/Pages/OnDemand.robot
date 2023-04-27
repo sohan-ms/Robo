@@ -32,6 +32,7 @@ Input Password
     SeleniumLibrary.Input Text    ${LOC_INPUT_PASSWORD}    ${user_password}
 
 Click Signin
+    [Documentation]     This is to validate user login
     SeleniumLibrary.Wait Until Element Is Visible    ${LOC_SIGNIN_BTN}
     SeleniumLibrary.Click Element    ${LOC_SIGNIN_BTN}
     BuiltIn.Wait Until Keyword Succeeds     60 s     1 s    SeleniumLibrary.Wait Until Element Is Visible    ${LOC_WELCOME_MSG}
@@ -39,12 +40,15 @@ Click Signin
     BuiltIn.Log    Login successful
 
 Navigate to OnDemand Module
-#    sleep    10s
-#    SeleniumLibrary.mouse over     ${loc_ondemand_tab}
-    sleep    20s
-    SeleniumLibrary.Click Element    ${LOC_ONDEMAND_TAB}
-    sleep    10s
-    SeleniumLibrary.Click Element    ${LOC_PLATFORM_TAB}
-    sleep    20s
-    SeleniumLibrary.Click Element    ${LOC_ADDPLATFORM_BTN}
+    [Documentation]     This is to validate ondemand module
+    BuiltIn.Wait Until Keyword Succeeds     60 s     1 s    SeleniumLibrary.Click Element    ${LOC_ONDEMAND_TAB}
+    SeleniumLibrary.wait until location contains    ${DELIVERY_PAGE_URL}
+    seleniumlibrary.wait until element is visible    ${LOC_DELIVERY_BTN}    10s
+    seleniumlibrary.page should contain element    ${LOC_DELIVERY_BTN}      10s
+
+Validate 'Create Delivery' drop down
+    [Documentation]     This is to validate Create Delivery button
+    click element    ${LOC_DELIVERY_BTN}
+    BuiltIn.Wait Until Keyword Succeeds     60 s     1 s       seleniumlibrary.wait until element is visible     ${LOC_SELF_SERVE_DELIVERY_BTN}
+    seleniumlibrary.wait until element is visible    ${LOC_RULE_BASED_DELIVERY_BTN}
 

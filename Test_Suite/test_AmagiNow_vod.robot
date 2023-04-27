@@ -10,3 +10,7 @@ Suite Teardown     Close All Browsers
 TC_01 Navigate to the OnDemand
     [Documentation]     Test case 1
     AN_VOD_home.Click on OnDemand module
+
+TC_01 Validate the Create Delivery button in OnDemand module
+    [Documentation]    Test case 2
+    AN_VOD_home.Click on Create Delivery button

@@ -11,5 +11,9 @@ ${LOC_GOTIT_BTN}     xpath=//button[@class='now-MuiButtonBase-root now-MuiButton
 ${LOC_ONDEMAND_TAB}  xpath=//div[.='On Demand']
 ${LOC_PLATFORM_TAB}  xpath=//div[.='Platforms']
 
-#Platform page
-${LOC_ADDPLATFORM_BTN}  xpath=//div[.='Add Platform']
+#Delivery page
+${DELIVERY_PAGE_URL}    https://vod_test_o.test.now.amagi.tv/now/on-demand/delivery
+${LOC_DELIVERY_BTN}  xpath=//div[.='Create Delivery']
+${LOC_SELF_SERVE_DELIVERY_BTN}  //div[.='Self Serve Delivery']
+${LOC_RULE_BASED_DELIVERY_BTN}  //div[.='Rule Based Delivery']
+

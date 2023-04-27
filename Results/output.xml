@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230427 17:51:33.519" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230427 22:20:53.611" rpa="false" schemaversion="3">
 <suite id="s1" name="test AmagiNow vod" source="/home/c-sohans/PycharmProjects/AmagiNow-vodDemo/Test_Suite/test_AmagiNow_vod.robot">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
 <arg>AN_VOD_landing.Navigate to vod end point</arg>
@@ -13,19 +13,19 @@
 <arg>Chrome</arg>
 <arg>${cmn_executable_path_chrome}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20230427 17:51:33.672" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230427 17:51:33.672" level="INFO">Executing: /home/c-sohans/PycharmProjects/AmagiNow-vodDemo/amaginowdemo_env/lib/python3.10/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json</msg>
-<status status="PASS" starttime="20230427 17:51:33.671" endtime="20230427 17:51:34.550"/>
+<msg timestamp="20230427 22:20:53.764" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230427 22:20:53.765" level="INFO">Executing: /home/c-sohans/PycharmProjects/AmagiNow-vodDemo/amaginowdemo_env/lib/python3.10/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json</msg>
+<status status="PASS" starttime="20230427 22:20:53.764" endtime="20230427 22:20:54.659"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${vod_end_point}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230427 17:51:34.551" level="INFO">Opening url 'https://test.now.amagi.tv/signin'</msg>
-<status status="PASS" starttime="20230427 17:51:34.550" endtime="20230427 17:51:38.589"/>
+<msg timestamp="20230427 22:20:54.660" level="INFO">Opening url 'https://test.now.amagi.tv/signin'</msg>
+<status status="PASS" starttime="20230427 22:20:54.659" endtime="20230427 22:21:04.270"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230427 17:51:38.589" endtime="20230427 17:51:38.696"/>
+<status status="PASS" starttime="20230427 22:21:04.270" endtime="20230427 22:21:04.383"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>60 s</arg>
@@ -36,13 +36,13 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_INPUT_EMAIL}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230427 17:51:38.698" endtime="20230427 17:51:38.766"/>
+<status status="PASS" starttime="20230427 22:21:04.385" endtime="20230427 22:21:04.483"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:38.697" endtime="20230427 17:51:38.766"/>
+<status status="PASS" starttime="20230427 22:21:04.384" endtime="20230427 22:21:04.483"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:33.671" endtime="20230427 17:51:38.766"/>
+<status status="PASS" starttime="20230427 22:20:53.764" endtime="20230427 22:21:04.484"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:33.671" endtime="20230427 17:51:38.766"/>
+<status status="PASS" starttime="20230427 22:20:53.763" endtime="20230427 22:21:04.484"/>
 </kw>
 <kw name="Enter valid credentials and sign in" library="AN_VOD_landing">
 <kw name="Input Email" library="OnDemand">
@@ -50,60 +50,61 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_INPUT_EMAIL}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230427 17:51:38.767" endtime="20230427 17:51:38.790"/>
+<status status="PASS" starttime="20230427 22:21:04.488" endtime="20230427 22:21:04.554"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LOC_INPUT_EMAIL}</arg>
 <arg>${user_email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230427 17:51:38.791" level="INFO">Typing text 'c-sohan.s@amagi.com' into text field 'name=email'.</msg>
-<status status="PASS" starttime="20230427 17:51:38.790" endtime="20230427 17:51:38.947"/>
+<msg timestamp="20230427 22:21:04.557" level="INFO">Typing text 'c-sohan.s@amagi.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230427 22:21:04.555" endtime="20230427 22:21:04.785"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:38.767" endtime="20230427 17:51:38.948"/>
+<status status="PASS" starttime="20230427 22:21:04.486" endtime="20230427 22:21:04.785"/>
 </kw>
 <kw name="Input Password" library="OnDemand">
 <arg>${user_password}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_INPUT_PASSWORD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230427 17:51:38.948" endtime="20230427 17:51:38.967"/>
+<status status="PASS" starttime="20230427 22:21:04.786" endtime="20230427 22:21:04.806"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LOC_INPUT_PASSWORD}</arg>
 <arg>${user_password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230427 17:51:38.968" level="INFO">Typing text 'User@321' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20230427 17:51:38.967" endtime="20230427 17:51:39.079"/>
+<msg timestamp="20230427 22:21:04.807" level="INFO">Typing text 'User@321' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230427 22:21:04.806" endtime="20230427 22:21:04.919"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:38.948" endtime="20230427 17:51:39.079"/>
+<status status="PASS" starttime="20230427 22:21:04.785" endtime="20230427 22:21:04.920"/>
 </kw>
 <kw name="Input Domain" library="OnDemand">
 <arg>${user_domain}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_INPUT_DOMAIN}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230427 17:51:39.080" endtime="20230427 17:51:39.098"/>
+<status status="PASS" starttime="20230427 22:21:04.921" endtime="20230427 22:21:04.941"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LOC_INPUT_DOMAIN}</arg>
 <arg>${user_domain}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230427 17:51:39.099" level="INFO">Typing text 'vod_test_o' into text field 'id=domain_name'.</msg>
-<status status="PASS" starttime="20230427 17:51:39.098" endtime="20230427 17:51:39.208"/>
+<msg timestamp="20230427 22:21:04.942" level="INFO">Typing text 'vod_test_o' into text field 'id=domain_name'.</msg>
+<status status="PASS" starttime="20230427 22:21:04.941" endtime="20230427 22:21:05.060"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:39.079" endtime="20230427 17:51:39.208"/>
+<status status="PASS" starttime="20230427 22:21:04.920" endtime="20230427 22:21:05.060"/>
 </kw>
 <kw name="Click Signin" library="OnDemand">
+<doc>This is to validate user login</doc>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_SIGNIN_BTN}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230427 17:51:39.208" endtime="20230427 17:51:39.226"/>
+<status status="PASS" starttime="20230427 22:21:05.061" endtime="20230427 22:21:05.082"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LOC_SIGNIN_BTN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230427 17:51:39.226" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230427 17:51:39.226" endtime="20230427 17:51:39.273"/>
+<msg timestamp="20230427 22:21:05.082" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230427 22:21:05.082" endtime="20230427 22:21:05.131"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>60 s</arg>
@@ -114,88 +115,171 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_WELCOME_MSG}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20230427 17:51:47.860" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230427 17:51:47.861" level="FAIL">Element 'xpath=//div[text()='Welcome to Amagi Now!']' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20230427 17:51:39.273" endtime="20230427 17:51:47.861"/>
+<msg timestamp="20230427 22:21:12.496" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230427 22:21:12.496" level="FAIL">Element 'xpath=//div[text()='Welcome to Amagi Now!']' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230427 22:21:05.132" endtime="20230427 22:21:12.497"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_WELCOME_MSG}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230427 17:51:48.862" endtime="20230427 17:51:49.329"/>
+<status status="PASS" starttime="20230427 22:21:13.498" endtime="20230427 22:21:14.200"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:39.273" endtime="20230427 17:51:49.329"/>
+<status status="PASS" starttime="20230427 22:21:05.131" endtime="20230427 22:21:14.200"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LOC_GOTIT_BTN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230427 17:51:49.330" level="INFO">Clicking button 'xpath=//button[@class='now-MuiButtonBase-root now-MuiButton-root now-MuiButton-outlined now-now27 now-now23 now-MuiButton-outlinedPrimary']'.</msg>
-<status status="PASS" starttime="20230427 17:51:49.329" endtime="20230427 17:51:49.378"/>
+<msg timestamp="20230427 22:21:14.201" level="INFO">Clicking button 'xpath=//button[@class='now-MuiButtonBase-root now-MuiButton-root now-MuiButton-outlined now-now27 now-now23 now-MuiButton-outlinedPrimary']'.</msg>
+<status status="PASS" starttime="20230427 22:21:14.200" endtime="20230427 22:21:14.266"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Login successful</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230427 17:51:49.379" level="INFO">Login successful</msg>
-<status status="PASS" starttime="20230427 17:51:49.379" endtime="20230427 17:51:49.379"/>
+<msg timestamp="20230427 22:21:14.267" level="INFO">Login successful</msg>
+<status status="PASS" starttime="20230427 22:21:14.266" endtime="20230427 22:21:14.267"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:39.208" endtime="20230427 17:51:49.379"/>
+<status status="PASS" starttime="20230427 22:21:05.061" endtime="20230427 22:21:14.267"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:38.767" endtime="20230427 17:51:49.379"/>
+<status status="PASS" starttime="20230427 22:21:04.485" endtime="20230427 22:21:14.267"/>
 </kw>
-<status status="PASS" starttime="20230427 17:51:33.670" endtime="20230427 17:51:49.379"/>
+<status status="PASS" starttime="20230427 22:20:53.763" endtime="20230427 22:21:14.267"/>
 </kw>
 <test id="s1-t1" name="TC_01 Navigate to the OnDemand" line="10">
 <kw name="Click on OnDemand module" library="AN_VOD_home">
 <kw name="Navigate to OnDemand Module" library="OnDemand">
-<kw name="Sleep" library="BuiltIn">
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230427 17:51:53.381" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20230427 17:51:49.381" endtime="20230427 17:51:53.381"/>
-</kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>This is to validate ondemand module</doc>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>60 s</arg>
+<arg>1 s</arg>
+<arg>SeleniumLibrary.Click Element</arg>
 <arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20230427 17:51:53.382" level="INFO">Simulating Mouse Over on element 'xpath=//div[.='On Demand' and @class='now-now37']'.</msg>
-<msg timestamp="20230427 17:51:53.557" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230427 17:51:53.557" level="FAIL">Element with locator 'xpath=//div[.='On Demand' and @class='now-now37']' not found.</msg>
-<status status="FAIL" starttime="20230427 17:51:53.381" endtime="20230427 17:51:53.558"/>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOC_ONDEMAND_TAB}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230427 22:21:14.270" level="INFO">Clicking element 'xpath=//div[text()='On Demand']'.</msg>
+<msg timestamp="20230427 22:21:14.450" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230427 22:21:14.450" level="FAIL">Element with locator 'xpath=//div[text()='On Demand']' not found.</msg>
+<status status="FAIL" starttime="20230427 22:21:14.268" endtime="20230427 22:21:14.451"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_PLATFORM_TAB}</arg>
+<arg>${LOC_ONDEMAND_TAB}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230427 17:51:53.558" endtime="20230427 17:51:53.558"/>
+<msg timestamp="20230427 22:21:15.454" level="INFO">Clicking element 'xpath=//div[text()='On Demand']'.</msg>
+<status status="PASS" starttime="20230427 22:21:15.452" endtime="20230427 22:21:15.718"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ADDPLATFORM_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230427 17:51:53.559" endtime="20230427 17:51:53.559"/>
+<status status="PASS" starttime="20230427 22:21:14.268" endtime="20230427 22:21:15.718"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>50s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230427 17:51:53.559" endtime="20230427 17:51:53.559"/>
+<kw name="Wait Until Location Contains" library="SeleniumLibrary">
+<arg>${DELIVERY_PAGE_URL}</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" starttime="20230427 22:21:15.718" endtime="20230427 22:21:15.980"/>
 </kw>
-<status status="FAIL" starttime="20230427 17:51:49.380" endtime="20230427 17:51:53.559"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOC_DELIVERY_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230427 22:21:15.980" endtime="20230427 22:21:18.968"/>
 </kw>
-<status status="FAIL" starttime="20230427 17:51:49.380" endtime="20230427 17:51:53.559"/>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${LOC_DELIVERY_BTN}</arg>
+<arg>10s</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230427 22:21:18.976" level="INFO">Current page contains element 'xpath=//div[.='Create Delivery']'.</msg>
+<status status="PASS" starttime="20230427 22:21:18.968" endtime="20230427 22:21:18.976"/>
+</kw>
+<status status="PASS" starttime="20230427 22:21:14.268" endtime="20230427 22:21:18.976"/>
+</kw>
+<status status="PASS" starttime="20230427 22:21:14.268" endtime="20230427 22:21:18.977"/>
 </kw>
 <doc>Test case 1</doc>
-<status status="FAIL" starttime="20230427 17:51:49.379" endtime="20230427 17:51:53.559">Element with locator 'xpath=//div[.='On Demand' and @class='now-now37']' not found.</status>
+<status status="PASS" starttime="20230427 22:21:14.267" endtime="20230427 22:21:18.977"/>
+</test>
+<test id="s1-t2" name="TC_01 Validate the Create Delivery button in OnDemand module" line="14">
+<kw name="Click on Create Delivery button" library="AN_VOD_home">
+<kw name="Navigate to OnDemand Module" library="OnDemand">
+<doc>This is to validate ondemand module</doc>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>60 s</arg>
+<arg>1 s</arg>
+<arg>SeleniumLibrary.Click Element</arg>
+<arg>${LOC_ONDEMAND_TAB}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOC_ONDEMAND_TAB}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230427 22:21:18.979" level="INFO">Clicking element 'xpath=//div[text()='On Demand']'.</msg>
+<status status="PASS" starttime="20230427 22:21:18.978" endtime="20230427 22:21:19.074"/>
+</kw>
+<status status="PASS" starttime="20230427 22:21:18.978" endtime="20230427 22:21:19.074"/>
+</kw>
+<kw name="Wait Until Location Contains" library="SeleniumLibrary">
+<arg>${DELIVERY_PAGE_URL}</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" starttime="20230427 22:21:19.075" endtime="20230427 22:21:19.086"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOC_DELIVERY_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230427 22:21:19.087" endtime="20230427 22:21:19.106"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${LOC_DELIVERY_BTN}</arg>
+<arg>10s</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230427 22:21:19.113" level="INFO">Current page contains element 'xpath=//div[.='Create Delivery']'.</msg>
+<status status="PASS" starttime="20230427 22:21:19.107" endtime="20230427 22:21:19.113"/>
+</kw>
+<status status="PASS" starttime="20230427 22:21:18.978" endtime="20230427 22:21:19.113"/>
+</kw>
+<kw name="Validate 'Create Delivery' drop down" library="OnDemand">
+<doc>This is to validate Create Delivery button</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOC_DELIVERY_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230427 22:21:19.114" level="INFO">Clicking element 'xpath=//div[.='Create Delivery']'.</msg>
+<status status="PASS" starttime="20230427 22:21:19.114" endtime="20230427 22:21:19.156"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>60 s</arg>
+<arg>1 s</arg>
+<arg>seleniumlibrary.wait until element is visible</arg>
+<arg>${LOC_SELF_SERVE_DELIVERY_BTN}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOC_SELF_SERVE_DELIVERY_BTN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230427 22:21:19.156" endtime="20230427 22:21:19.450"/>
+</kw>
+<status status="PASS" starttime="20230427 22:21:19.156" endtime="20230427 22:21:19.450"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOC_RULE_BASED_DELIVERY_BTN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230427 22:21:19.451" endtime="20230427 22:21:19.544"/>
+</kw>
+<status status="PASS" starttime="20230427 22:21:19.114" endtime="20230427 22:21:19.545"/>
+</kw>
+<status status="PASS" starttime="20230427 22:21:18.977" endtime="20230427 22:21:19.545"/>
+</kw>
+<doc>Test case 2</doc>
+<status status="PASS" starttime="20230427 22:21:18.977" endtime="20230427 22:21:19.546"/>
 </test>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230427 17:51:53.560" endtime="20230427 17:51:53.620"/>
+<status status="PASS" starttime="20230427 22:21:19.548" endtime="20230427 22:21:19.648"/>
 </kw>
-<status status="FAIL" starttime="20230427 17:51:33.520" endtime="20230427 17:51:53.620"/>
+<status status="PASS" starttime="20230427 22:20:53.612" endtime="20230427 22:21:19.648"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="test AmagiNow vod">test AmagiNow vod</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="test AmagiNow vod">test AmagiNow vod</stat>
 </suite>
 </statistics>
 <errors>
