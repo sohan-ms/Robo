@@ -11,6 +11,10 @@ TC_01 Navigate to the OnDemand
     [Documentation]     Test case 1
     AN_VOD_home.Click on OnDemand module
 
-TC_01 Validate the Create Delivery button in OnDemand module
+TC_02 Validate the Create Delivery button in OnDemand module
     [Documentation]    Test case 2
     AN_VOD_home.Click on Create Delivery button
+
+TC_03 Validate the table on delivery page
+    [Documentation]    Test case 3
+    an_vod_home.get the elements present in the headers of the table
