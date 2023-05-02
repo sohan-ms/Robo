@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230428 22:08:08.696" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230502 09:59:34.364" rpa="false" schemaversion="3">
 <suite id="s1" name="test AmagiNow vod" source="/home/c-sohans/PycharmProjects/AmagiNow-vodDemo/Test_Suite/test_AmagiNow_vod.robot">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
 <arg>AN_VOD_landing.Navigate to vod end point</arg>
@@ -13,19 +13,19 @@
 <arg>Chrome</arg>
 <arg>${cmn_executable_path_chrome}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20230428 22:08:08.832" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230428 22:08:08.832" level="INFO">Executing: /home/c-sohans/PycharmProjects/AmagiNow-vodDemo/amaginowdemo_env/lib/python3.10/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json</msg>
-<status status="PASS" starttime="20230428 22:08:08.831" endtime="20230428 22:08:09.670"/>
+<msg timestamp="20230502 09:59:34.503" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230502 09:59:34.503" level="INFO">Executing: /home/c-sohans/PycharmProjects/AmagiNow-vodDemo/amaginowdemo_env/lib/python3.10/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --output json</msg>
+<status status="PASS" starttime="20230502 09:59:34.502" endtime="20230502 09:59:35.314"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${vod_end_point}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230428 22:08:09.671" level="INFO">Opening url 'https://test.now.amagi.tv/signin'</msg>
-<status status="PASS" starttime="20230428 22:08:09.671" endtime="20230428 22:08:38.516"/>
+<msg timestamp="20230502 09:59:35.314" level="INFO">Opening url 'https://test.now.amagi.tv/signin'</msg>
+<status status="PASS" starttime="20230502 09:59:35.314" endtime="20230502 09:59:40.244"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230428 22:08:38.516" endtime="20230428 22:08:38.626"/>
+<status status="PASS" starttime="20230502 09:59:40.245" endtime="20230502 09:59:40.351"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>60 s</arg>
@@ -36,13 +36,13 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_INPUT_EMAIL}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:08:38.626" endtime="20230428 22:08:38.660"/>
+<status status="PASS" starttime="20230502 09:59:40.353" endtime="20230502 09:59:40.429"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:38.626" endtime="20230428 22:08:38.660"/>
+<status status="PASS" starttime="20230502 09:59:40.352" endtime="20230502 09:59:40.429"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:08.831" endtime="20230428 22:08:38.660"/>
+<status status="PASS" starttime="20230502 09:59:34.502" endtime="20230502 09:59:40.430"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:08.831" endtime="20230428 22:08:38.660"/>
+<status status="PASS" starttime="20230502 09:59:34.502" endtime="20230502 09:59:40.430"/>
 </kw>
 <kw name="Enter valid credentials and sign in" library="AN_VOD_landing">
 <kw name="Input Email" library="OnDemand">
@@ -50,61 +50,61 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_INPUT_EMAIL}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:08:38.661" endtime="20230428 22:08:38.684"/>
+<status status="PASS" starttime="20230502 09:59:40.431" endtime="20230502 09:59:40.452"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LOC_INPUT_EMAIL}</arg>
 <arg>${user_email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230428 22:08:38.685" level="INFO">Typing text 'c-sohan.s@amagi.com' into text field 'name=email'.</msg>
-<status status="PASS" starttime="20230428 22:08:38.685" endtime="20230428 22:08:38.870"/>
+<msg timestamp="20230502 09:59:40.452" level="INFO">Typing text 'c-sohan.s@amagi.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20230502 09:59:40.452" endtime="20230502 09:59:40.595"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:38.661" endtime="20230428 22:08:38.870"/>
+<status status="PASS" starttime="20230502 09:59:40.431" endtime="20230502 09:59:40.595"/>
 </kw>
 <kw name="Input Password" library="OnDemand">
 <arg>${user_password}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_INPUT_PASSWORD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:08:38.871" endtime="20230428 22:08:38.889"/>
+<status status="PASS" starttime="20230502 09:59:40.595" endtime="20230502 09:59:40.613"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LOC_INPUT_PASSWORD}</arg>
 <arg>${user_password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230428 22:08:38.889" level="INFO">Typing text 'User@321' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20230428 22:08:38.889" endtime="20230428 22:08:38.991"/>
+<msg timestamp="20230502 09:59:40.614" level="INFO">Typing text 'User@321' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230502 09:59:40.613" endtime="20230502 09:59:40.714"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:38.870" endtime="20230428 22:08:38.992"/>
+<status status="PASS" starttime="20230502 09:59:40.595" endtime="20230502 09:59:40.714"/>
 </kw>
 <kw name="Input Domain" library="OnDemand">
 <arg>${user_domain}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_INPUT_DOMAIN}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:08:38.992" endtime="20230428 22:08:39.010"/>
+<status status="PASS" starttime="20230502 09:59:40.715" endtime="20230502 09:59:40.732"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LOC_INPUT_DOMAIN}</arg>
 <arg>${user_domain}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230428 22:08:39.010" level="INFO">Typing text 'vod_test_o' into text field 'id=domain_name'.</msg>
-<status status="PASS" starttime="20230428 22:08:39.010" endtime="20230428 22:08:39.113"/>
+<msg timestamp="20230502 09:59:40.733" level="INFO">Typing text 'vod_test_o' into text field 'id=domain_name'.</msg>
+<status status="PASS" starttime="20230502 09:59:40.732" endtime="20230502 09:59:40.830"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:38.992" endtime="20230428 22:08:39.113"/>
+<status status="PASS" starttime="20230502 09:59:40.714" endtime="20230502 09:59:40.830"/>
 </kw>
 <kw name="Click Signin" library="OnDemand">
 <doc>This is to validate user login</doc>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_SIGNIN_BTN}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:08:39.113" endtime="20230428 22:08:39.131"/>
+<status status="PASS" starttime="20230502 09:59:40.831" endtime="20230502 09:59:40.848"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LOC_SIGNIN_BTN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:08:39.132" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230428 22:08:39.131" endtime="20230428 22:08:39.175"/>
+<msg timestamp="20230502 09:59:40.849" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230502 09:59:40.849" endtime="20230502 09:59:40.893"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>60 s</arg>
@@ -115,41 +115,34 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_WELCOME_MSG}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20230428 22:08:44.806" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:08:44.806" level="FAIL">Element 'xpath=//div[text()='Welcome to Amagi Now!']' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20230428 22:08:39.176" endtime="20230428 22:08:44.807"/>
+<msg timestamp="20230502 09:59:48.355" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230502 09:59:48.355" level="FAIL">Element 'xpath=//div[text()='Welcome to Amagi Now!']' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230502 09:59:40.894" endtime="20230502 09:59:48.356"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_WELCOME_MSG}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20230428 22:08:56.091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:08:56.091" level="FAIL">Element 'xpath=//div[text()='Welcome to Amagi Now!']' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20230428 22:08:45.807" endtime="20230428 22:08:56.091"/>
+<status status="PASS" starttime="20230502 09:59:49.356" endtime="20230502 09:59:49.834"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${LOC_WELCOME_MSG}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:08:57.092" endtime="20230428 22:08:57.816"/>
-</kw>
-<status status="PASS" starttime="20230428 22:08:39.175" endtime="20230428 22:08:57.816"/>
+<status status="PASS" starttime="20230502 09:59:40.894" endtime="20230502 09:59:49.834"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LOC_GOTIT_BTN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230428 22:08:57.819" level="INFO">Clicking button 'xpath=//button[@class='now-MuiButtonBase-root now-MuiButton-root now-MuiButton-outlined now-now27 now-now23 now-MuiButton-outlinedPrimary']'.</msg>
-<status status="PASS" starttime="20230428 22:08:57.817" endtime="20230428 22:08:57.905"/>
+<msg timestamp="20230502 09:59:49.834" level="INFO">Clicking button 'xpath=//button[@class='now-MuiButtonBase-root now-MuiButton-root now-MuiButton-outlined now-now27 now-now23 now-MuiButton-outlinedPrimary']'.</msg>
+<status status="PASS" starttime="20230502 09:59:49.834" endtime="20230502 09:59:49.881"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Login successful</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230428 22:08:57.905" level="INFO">Login successful</msg>
-<status status="PASS" starttime="20230428 22:08:57.905" endtime="20230428 22:08:57.905"/>
+<msg timestamp="20230502 09:59:49.882" level="INFO">Login successful</msg>
+<status status="PASS" starttime="20230502 09:59:49.882" endtime="20230502 09:59:49.882"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:39.113" endtime="20230428 22:08:57.906"/>
+<status status="PASS" starttime="20230502 09:59:40.830" endtime="20230502 09:59:49.882"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:38.661" endtime="20230428 22:08:57.906"/>
+<status status="PASS" starttime="20230502 09:59:40.430" endtime="20230502 09:59:49.882"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:08.830" endtime="20230428 22:08:57.906"/>
+<status status="PASS" starttime="20230502 09:59:34.502" endtime="20230502 09:59:49.882"/>
 </kw>
 <test id="s1-t1" name="TC_01 Navigate to the OnDemand" line="10">
 <kw name="Click on OnDemand module" library="AN_VOD_home">
@@ -164,116 +157,46 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LOC_ONDEMAND_TAB}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:08:57.908" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:08:58.075" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:08:58.075" level="FAIL">Element with locator 'xpath=//div[.='On Demand']' not found.</msg>
-<status status="FAIL" starttime="20230428 22:08:57.908" endtime="20230428 22:08:58.075"/>
+<msg timestamp="20230502 09:59:49.884" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
+<msg timestamp="20230502 09:59:50.031" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230502 09:59:50.031" level="FAIL">Element with locator 'xpath=//div[.='On Demand']' not found.</msg>
+<status status="FAIL" starttime="20230502 09:59:49.883" endtime="20230502 09:59:50.032"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LOC_ONDEMAND_TAB}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:08:59.078" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<status status="PASS" starttime="20230428 22:08:59.076" endtime="20230428 22:09:00.225"/>
+<msg timestamp="20230502 09:59:51.034" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
+<status status="PASS" starttime="20230502 09:59:51.033" endtime="20230502 09:59:51.142"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:57.907" endtime="20230428 22:09:00.225"/>
+<status status="PASS" starttime="20230502 09:59:49.883" endtime="20230502 09:59:51.142"/>
 </kw>
 <kw name="Wait Until Location Contains" library="SeleniumLibrary">
 <arg>${DELIVERY_PAGE_URL}</arg>
 <doc>Waits until the current URL contains ``expected``.</doc>
-<status status="PASS" starttime="20230428 22:09:00.225" endtime="20230428 22:09:00.494"/>
+<status status="PASS" starttime="20230502 09:59:51.142" endtime="20230502 09:59:51.404"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_DELIVERY_BTN}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:09:00.494" endtime="20230428 22:09:08.497"/>
+<status status="PASS" starttime="20230502 09:59:51.404" endtime="20230502 09:59:56.316"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${LOC_DELIVERY_BTN}</arg>
 <arg>10s</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230428 22:09:08.523" level="INFO">Current page contains element 'xpath=//div[.='Create Delivery']'.</msg>
-<status status="PASS" starttime="20230428 22:09:08.498" endtime="20230428 22:09:08.523"/>
+<msg timestamp="20230502 09:59:56.346" level="INFO">Current page contains element 'xpath=//div[.='Create Delivery']'.</msg>
+<status status="PASS" starttime="20230502 09:59:56.317" endtime="20230502 09:59:56.346"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:57.907" endtime="20230428 22:09:08.524"/>
+<status status="PASS" starttime="20230502 09:59:49.883" endtime="20230502 09:59:56.347"/>
 </kw>
-<status status="PASS" starttime="20230428 22:08:57.907" endtime="20230428 22:09:08.524"/>
+<status status="PASS" starttime="20230502 09:59:49.883" endtime="20230502 09:59:56.347"/>
 </kw>
 <doc>Test case 1</doc>
-<status status="PASS" starttime="20230428 22:08:57.906" endtime="20230428 22:09:08.524"/>
+<tag>smoke</tag>
+<status status="PASS" starttime="20230502 09:59:49.882" endtime="20230502 09:59:56.348"/>
 </test>
-<test id="s1-t2" name="TC_02 Validate the Create Delivery button in OnDemand module" line="14">
-<kw name="Click on Create Delivery button" library="AN_VOD_home">
-<kw name="Navigate to OnDemand Module" library="OnDemand">
-<doc>This is to validate ondemand module</doc>
-<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
-<arg>30 s</arg>
-<arg>1 s</arg>
-<arg>SeleniumLibrary.Click Element</arg>
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:08.530" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<status status="PASS" starttime="20230428 22:09:08.529" endtime="20230428 22:09:08.631"/>
-</kw>
-<status status="PASS" starttime="20230428 22:09:08.528" endtime="20230428 22:09:08.631"/>
-</kw>
-<kw name="Wait Until Location Contains" library="SeleniumLibrary">
-<arg>${DELIVERY_PAGE_URL}</arg>
-<doc>Waits until the current URL contains ``expected``.</doc>
-<status status="PASS" starttime="20230428 22:09:08.631" endtime="20230428 22:09:08.658"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${LOC_DELIVERY_BTN}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:09:08.659" endtime="20230428 22:09:08.674"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${LOC_DELIVERY_BTN}</arg>
-<arg>10s</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230428 22:09:08.681" level="INFO">Current page contains element 'xpath=//div[.='Create Delivery']'.</msg>
-<status status="PASS" starttime="20230428 22:09:08.674" endtime="20230428 22:09:08.681"/>
-</kw>
-<status status="PASS" starttime="20230428 22:09:08.527" endtime="20230428 22:09:08.681"/>
-</kw>
-<kw name="Validate 'Create Delivery' drop down" library="OnDemand">
-<doc>This is to validate Create Delivery button</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_DELIVERY_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:08.682" level="INFO">Clicking element 'xpath=//div[.='Create Delivery']'.</msg>
-<status status="PASS" starttime="20230428 22:09:08.682" endtime="20230428 22:09:08.722"/>
-</kw>
-<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
-<arg>60 s</arg>
-<arg>1 s</arg>
-<arg>seleniumlibrary.wait until element is visible</arg>
-<arg>${LOC_SELF_SERVE_DELIVERY_BTN}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${LOC_SELF_SERVE_DELIVERY_BTN}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:09:08.723" endtime="20230428 22:09:08.741"/>
-</kw>
-<status status="PASS" starttime="20230428 22:09:08.723" endtime="20230428 22:09:08.741"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${LOC_RULE_BASED_DELIVERY_BTN}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230428 22:09:08.741" endtime="20230428 22:09:08.759"/>
-</kw>
-<status status="PASS" starttime="20230428 22:09:08.681" endtime="20230428 22:09:08.759"/>
-</kw>
-<status status="PASS" starttime="20230428 22:09:08.527" endtime="20230428 22:09:08.759"/>
-</kw>
-<doc>Test case 2</doc>
-<status status="PASS" starttime="20230428 22:09:08.525" endtime="20230428 22:09:08.759"/>
-</test>
-<test id="s1-t3" name="TC_03 Validate the table on delivery page" line="18">
+<test id="s1-t2" name="TC_02 Validate the table on delivery page" line="16">
 <kw name="Get the elements present in the headers of the table" library="AN_VOD_home">
 <kw name="Navigate to OnDemand Module" library="OnDemand">
 <doc>This is to validate ondemand module</doc>
@@ -286,576 +209,249 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LOC_ONDEMAND_TAB}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:08.762" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:10.003" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:10.003" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:08.761" endtime="20230428 22:09:10.004"/>
+<msg timestamp="20230502 09:59:56.356" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
+<status status="PASS" starttime="20230502 09:59:56.353" endtime="20230502 09:59:56.499"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:11.006" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:12.277" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:12.277" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:11.005" endtime="20230428 22:09:12.277"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:13.280" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:14.588" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:14.588" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:13.278" endtime="20230428 22:09:14.588"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:15.591" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:16.838" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:16.838" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:15.589" endtime="20230428 22:09:16.838"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:17.840" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:19.154" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:19.154" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:17.839" endtime="20230428 22:09:19.155"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:20.157" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:21.423" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:21.423" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:20.155" endtime="20230428 22:09:21.423"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:22.426" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:23.698" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:23.698" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:22.424" endtime="20230428 22:09:23.698"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:24.701" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:25.972" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:25.972" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:24.699" endtime="20230428 22:09:25.972"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:26.975" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:28.282" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:28.283" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:26.973" endtime="20230428 22:09:28.283"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:29.286" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:30.578" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:30.578" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:29.284" endtime="20230428 22:09:30.578"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:31.581" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:32.902" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:32.902" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:31.579" endtime="20230428 22:09:32.902"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:33.904" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:35.178" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:35.178" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:33.903" endtime="20230428 22:09:35.178"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:36.181" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:37.476" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:37.476" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:36.179" endtime="20230428 22:09:37.476"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${LOC_ONDEMAND_TAB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 22:09:38.478" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
-<msg timestamp="20230428 22:09:39.744" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230428 22:09:39.744" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:38.477" endtime="20230428 22:09:39.744"/>
-</kw>
-<msg timestamp="20230428 22:09:39.744" level="FAIL">Keyword 'SeleniumLibrary.Click Element' failed after retrying for 30 seconds. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20230428 22:09:08.761" endtime="20230428 22:09:39.744"/>
+<status status="PASS" starttime="20230502 09:59:56.352" endtime="20230502 09:59:56.499"/>
 </kw>
 <kw name="Wait Until Location Contains" library="SeleniumLibrary">
 <arg>${DELIVERY_PAGE_URL}</arg>
 <doc>Waits until the current URL contains ``expected``.</doc>
-<status status="NOT RUN" starttime="20230428 22:09:39.744" endtime="20230428 22:09:39.744"/>
+<status status="PASS" starttime="20230502 09:59:56.499" endtime="20230502 09:59:56.510"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${LOC_DELIVERY_BTN}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230428 22:09:39.744" endtime="20230428 22:09:39.744"/>
+<status status="PASS" starttime="20230502 09:59:56.510" endtime="20230502 09:59:56.525"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${LOC_DELIVERY_BTN}</arg>
 <arg>10s</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="NOT RUN" starttime="20230428 22:09:39.745" endtime="20230428 22:09:39.745"/>
+<msg timestamp="20230502 09:59:56.532" level="INFO">Current page contains element 'xpath=//div[.='Create Delivery']'.</msg>
+<status status="PASS" starttime="20230502 09:59:56.525" endtime="20230502 09:59:56.532"/>
 </kw>
-<status status="FAIL" starttime="20230428 22:09:08.761" endtime="20230428 22:09:39.745"/>
+<status status="PASS" starttime="20230502 09:59:56.351" endtime="20230502 09:59:56.532"/>
 </kw>
 <kw name="Get the headers present in the table" library="OnDemand">
 <doc>This is to fetch the table names</doc>
-<status status="NOT RUN" starttime="20230428 22:09:39.745" endtime="20230428 22:09:39.745"/>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{headers_name}</var>
+<arg>xpath=//table/thead/tr/th</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.543" level="INFO">@{headers_name} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="fd5d291050e00b6f2cd30b534a1e73fb", element="2ce7a4a5-4596-4bf8-89a7-f4ab12b67a8a")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20230502 09:59:56.532" endtime="20230502 09:59:56.543"/>
 </kw>
-<status status="FAIL" starttime="20230428 22:09:08.760" endtime="20230428 22:09:39.745"/>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${get elements count}</var>
+<arg>xpath=//table/thead/tr/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.550" level="INFO">${get elements count} = 6</msg>
+<status status="PASS" starttime="20230502 09:59:56.543" endtime="20230502 09:59:56.550"/>
+</kw>
+<for flavor="IN">
+<var>${elements}</var>
+<value>@{headers_name}</value>
+<iter>
+<var name="${elements}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fd5d291050e00b6f2cd30b534a1e73fb", element="2ce7a4a5-4596-4bf8-89a7-f4ab12b67a8a")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${elements}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.563" level="INFO">${text} = TICKET NO.</msg>
+<status status="PASS" starttime="20230502 09:59:56.550" endtime="20230502 09:59:56.563"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Num value is ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230502 09:59:56.563" level="INFO">Num value is TICKET NO.</msg>
+<status status="PASS" starttime="20230502 09:59:56.563" endtime="20230502 09:59:56.563"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.550" endtime="20230502 09:59:56.563"/>
+</iter>
+<iter>
+<var name="${elements}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fd5d291050e00b6f2cd30b534a1e73fb", element="b36afc26-403b-4a93-a687-08724c1382c3")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${elements}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.576" level="INFO">${text} = ASSET INFORMATION</msg>
+<status status="PASS" starttime="20230502 09:59:56.563" endtime="20230502 09:59:56.576"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Num value is ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230502 09:59:56.576" level="INFO">Num value is ASSET INFORMATION</msg>
+<status status="PASS" starttime="20230502 09:59:56.576" endtime="20230502 09:59:56.576"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.563" endtime="20230502 09:59:56.576"/>
+</iter>
+<iter>
+<var name="${elements}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fd5d291050e00b6f2cd30b534a1e73fb", element="a5eed48f-2527-419f-bcec-528b1bf4eaa6")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${elements}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.589" level="INFO">${text} = CREATION DATE</msg>
+<status status="PASS" starttime="20230502 09:59:56.576" endtime="20230502 09:59:56.589"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Num value is ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230502 09:59:56.589" level="INFO">Num value is CREATION DATE</msg>
+<status status="PASS" starttime="20230502 09:59:56.589" endtime="20230502 09:59:56.589"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.576" endtime="20230502 09:59:56.589"/>
+</iter>
+<iter>
+<var name="${elements}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fd5d291050e00b6f2cd30b534a1e73fb", element="40a6f811-9bb7-4060-b4c5-b60ff84035e6")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${elements}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.601" level="INFO">${text} = DELIVERED DATE</msg>
+<status status="PASS" starttime="20230502 09:59:56.590" endtime="20230502 09:59:56.601"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Num value is ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230502 09:59:56.601" level="INFO">Num value is DELIVERED DATE</msg>
+<status status="PASS" starttime="20230502 09:59:56.601" endtime="20230502 09:59:56.601"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.589" endtime="20230502 09:59:56.601"/>
+</iter>
+<iter>
+<var name="${elements}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fd5d291050e00b6f2cd30b534a1e73fb", element="6a738890-3078-43d0-b8f7-1115746ef2f6")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${elements}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.613" level="INFO">${text} = PLATFORM/LICENSE</msg>
+<status status="PASS" starttime="20230502 09:59:56.602" endtime="20230502 09:59:56.613"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Num value is ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230502 09:59:56.614" level="INFO">Num value is PLATFORM/LICENSE</msg>
+<status status="PASS" starttime="20230502 09:59:56.613" endtime="20230502 09:59:56.614"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.601" endtime="20230502 09:59:56.614"/>
+</iter>
+<iter>
+<var name="${elements}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fd5d291050e00b6f2cd30b534a1e73fb", element="04fdb5b5-01c5-41f4-a140-4cafc405a228")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${elements}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.626" level="INFO">${text} = STATUS</msg>
+<status status="PASS" starttime="20230502 09:59:56.614" endtime="20230502 09:59:56.626"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Num value is ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230502 09:59:56.626" level="INFO">Num value is STATUS</msg>
+<status status="PASS" starttime="20230502 09:59:56.626" endtime="20230502 09:59:56.626"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.614" endtime="20230502 09:59:56.627"/>
+</iter>
+<status status="PASS" starttime="20230502 09:59:56.550" endtime="20230502 09:59:56.627"/>
+</for>
+<status status="PASS" starttime="20230502 09:59:56.532" endtime="20230502 09:59:56.627"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.350" endtime="20230502 09:59:56.627"/>
+</kw>
+<doc>Test case 2</doc>
+<tag>smoke</tag>
+<status status="PASS" starttime="20230502 09:59:56.349" endtime="20230502 09:59:56.627"/>
+</test>
+<test id="s1-t3" name="TC_03 Validate the Create Delivery button in OnDemand module" line="21">
+<kw name="Click on Create Delivery button" library="AN_VOD_home">
+<kw name="Navigate to OnDemand Module" library="OnDemand">
+<doc>This is to validate ondemand module</doc>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>30 s</arg>
+<arg>1 s</arg>
+<arg>SeleniumLibrary.Click Element</arg>
+<arg>${LOC_ONDEMAND_TAB}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOC_ONDEMAND_TAB}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.629" level="INFO">Clicking element 'xpath=//div[.='On Demand']'.</msg>
+<status status="PASS" starttime="20230502 09:59:56.628" endtime="20230502 09:59:56.704"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.628" endtime="20230502 09:59:56.704"/>
+</kw>
+<kw name="Wait Until Location Contains" library="SeleniumLibrary">
+<arg>${DELIVERY_PAGE_URL}</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" starttime="20230502 09:59:56.704" endtime="20230502 09:59:56.717"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOC_DELIVERY_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230502 09:59:56.717" endtime="20230502 09:59:56.732"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${LOC_DELIVERY_BTN}</arg>
+<arg>10s</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230502 09:59:56.741" level="INFO">Current page contains element 'xpath=//div[.='Create Delivery']'.</msg>
+<status status="PASS" starttime="20230502 09:59:56.733" endtime="20230502 09:59:56.741"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.628" endtime="20230502 09:59:56.741"/>
+</kw>
+<kw name="Validate 'Create Delivery' drop down" library="OnDemand">
+<doc>This is to validate Create Delivery button</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOC_DELIVERY_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230502 09:59:56.742" level="INFO">Clicking element 'xpath=//div[.='Create Delivery']'.</msg>
+<status status="PASS" starttime="20230502 09:59:56.741" endtime="20230502 09:59:56.782"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>60 s</arg>
+<arg>1 s</arg>
+<arg>seleniumlibrary.wait until element is visible</arg>
+<arg>${LOC_SELF_SERVE_DELIVERY_BTN}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOC_SELF_SERVE_DELIVERY_BTN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230502 09:59:56.783" endtime="20230502 09:59:57.031"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.782" endtime="20230502 09:59:57.031"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOC_RULE_BASED_DELIVERY_BTN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230502 09:59:57.031" endtime="20230502 09:59:57.068"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.741" endtime="20230502 09:59:57.068"/>
+</kw>
+<status status="PASS" starttime="20230502 09:59:56.628" endtime="20230502 09:59:57.068"/>
 </kw>
 <doc>Test case 3</doc>
-<status status="FAIL" starttime="20230428 22:09:08.760" endtime="20230428 22:09:39.745">Keyword 'SeleniumLibrary.Click Element' failed after retrying for 30 seconds. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="now-now52 now-now53" data-testid="header-on-demand-el"&gt;...&lt;/div&gt; is not clickable at point (732, 28). Other element would receive the click: &lt;div aria-hidden="true" style="z-index: -1; position: fixed; inset: 0px; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Stacktrace:
-#0 0x55a077ef6fe3 &lt;unknown&gt;
-#1 0x55a077c35d36 &lt;unknown&gt;
-#2 0x55a077c79aef &lt;unknown&gt;
-#3 0x55a077c77a31 &lt;unknown&gt;
-#4 0x55a077c752de &lt;unknown&gt;
-#5 0x55a077c74358 &lt;unknown&gt;
-#6 0x55a077c680c5 &lt;unknown&gt;
-#7 0x55a077c938c2 &lt;unknown&gt;
-#8 0x55a077c67943 &lt;unknown&gt;
-#9 0x55a077c93a8e &lt;unknown&gt;
-#10 0x55a077cac232 &lt;unknown&gt;
-#11 0x55a077c93693 &lt;unknown&gt;
-#12 0x55a077c6603a &lt;unknown&gt;
-#13 0x55a077c6717e &lt;unknown&gt;
-#14 0x55a077eb8dbd &lt;unknown&gt;
-#15 0x55a077ebcc6c &lt;unknown&gt;
-#16 0x55a077ec64b0 &lt;unknown&gt;
-#17 0x55a077ebdd63 &lt;unknown&gt;
-#18 0x55a077e90c35 &lt;unknown&gt;
-#19 0x55a077ee1138 &lt;unknown&gt;
-#20 0x55a077ee12c7 &lt;unknown&gt;
-#21 0x55a077eef093 &lt;unknown&gt;
-#22 0x7f5720494b43 &lt;unknown&gt;
-</status>
+<tag>smoke</tag>
+<status status="PASS" starttime="20230502 09:59:56.627" endtime="20230502 09:59:57.069"/>
 </test>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230428 22:09:39.746" endtime="20230428 22:09:39.810"/>
+<status status="PASS" starttime="20230502 09:59:57.070" endtime="20230502 09:59:57.132"/>
 </kw>
-<status status="FAIL" starttime="20230428 22:08:08.697" endtime="20230428 22:09:39.810"/>
+<status status="PASS" starttime="20230502 09:59:34.365" endtime="20230502 09:59:57.132"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="3" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="2" fail="1" skip="0" id="s1" name="test AmagiNow vod">test AmagiNow vod</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="test AmagiNow vod">test AmagiNow vod</stat>
 </suite>
 </statistics>
 <errors>

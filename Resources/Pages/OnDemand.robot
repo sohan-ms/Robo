@@ -8,6 +8,10 @@ Resource     ../../Variables/common_variables.robot
 Resource    ../../Variables/env_variables.robot
 Resource    ../../Variables/locators_variables.robot
 
+*** Variables ***
+#  @{search_text}      ASSET INFORMATION   CREATION DATE   DELIVERED DATE  PLATFORM/LICENSE
+
+
 *** Keywords ***
 Open Vod End Point
     [Documentation]     This is used to open the vod end point
@@ -55,8 +59,15 @@ Validate 'Create Delivery' drop down
 Get the headers present in the table
     [Documentation]    This is to fetch the table names
     @{headers_name} =   Get WebElements     xpath=//table/thead/tr/th
+    ${get elements count} =     get element count    xpath=//table/thead/tr/th
     FOR    ${elements}   IN    @{headers_name}
             ${text}=    get text    ${elements}
             Log    Num value is ${text}
+#            log to console    ${text}
     END
+
+#    [Arguments]    @{search_text}
+#    FOR    ${i}     IN RANGE    0   ${get elements count}
+#        page should contain      @{search_text}[${i}]
+#    END
 

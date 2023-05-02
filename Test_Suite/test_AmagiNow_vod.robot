@@ -9,12 +9,16 @@ Suite Teardown     Close All Browsers
 *** Test Cases ***
 TC_01 Navigate to the OnDemand
     [Documentation]     Test case 1
+    [Tags]    smoke
     AN_VOD_home.Click on OnDemand module
 
-TC_02 Validate the Create Delivery button in OnDemand module
-    [Documentation]    Test case 2
-    AN_VOD_home.Click on Create Delivery button
 
-TC_03 Validate the table on delivery page
-    [Documentation]    Test case 3
+TC_02 Validate the table on delivery page
+    [Documentation]    Test case 2
+    [Tags]    smoke
     an_vod_home.get the elements present in the headers of the table
+
+TC_03 Validate the Create Delivery button in OnDemand module
+    [Documentation]    Test case 3
+    [Tags]    smoke
+    AN_VOD_home.Click on Create Delivery button
