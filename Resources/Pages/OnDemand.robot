@@ -8,10 +8,6 @@ Resource     ../../Variables/common_variables.robot
 Resource    ../../Variables/env_variables.robot
 Resource    ../../Variables/locators_variables.robot
 
-*** Variables ***
-#  @{search_text}      ASSET INFORMATION   CREATION DATE   DELIVERED DATE  PLATFORM/LICENSE
-
-
 *** Keywords ***
 Open Vod End Point
     [Documentation]     This is used to open the vod end point
@@ -71,3 +67,45 @@ Get the headers present in the table
 #        page should contain      @{search_text}[${i}]
 #    END
 
+Get the TICKET NO's present in the table
+    [Documentation]    This is to get and compare the unique no present in the ticket no section
+    @{Ticket No} =      Get WebElements    xpath=//table/tbody/tr/td[1]/div/span
+    ${get id count} =   get element count    xpath=//table/tbody/tr/td[1]/div/span
+    wait until page contains    TICKET NO.
+#    execute javascript    window.scrollTo(0, document.body.scrollHeight)
+#    scroll element into view    (//table/tbody/tr/td[1]/div/span)[last()]
+     FOR    ${i}     IN RANGE    1   ${get id count}
+        @{Ticket No2} =      Get WebElements    xpath=(//table/tbody/tr/td[1]/div/span)[${i}]
+        ${tttt}=    get text    @{Ticket No2}
+            log to console         ${get id count}
+                FOR    ${i}     IN RANGE    2   ${get id count}
+                    @{Ticket No3} =      Get WebElements    xpath=(//table/tbody/tr/td[1]/div/span)[${i}]
+                    ${textT}=    get text    @{Ticket No3}
+                    should not be equal as strings    ${tttt}        ${textT}
+                        log to console    not equals
+               END
+     END
+#     deprecated as of now
+
+click on the filter icon
+    [Documentation]    This is to check the filter icon functionality
+    click element                   ${Filter_ICON_SYMBOL}
+    wait until page contains        ${Filter_text}
+#    apply filters
+    click element                   ${FILTER_DROPDOWN_PLATFORM}
+    click element                   ${FILTER_DROPDOWN_STATUS}
+    ${COUNT} =  Get Element Count   xpath=(//input[@class='vod-vod129'])
+    FOR    ${i}     IN RANGE    1   ${COUNT}+1
+        select checkbox    xpath=(//input[@class='vod-vod129'])[${i}]
+    END
+    click button                    ${FILTER_APPLY_BTN}
+
+    wait until page contains        ${APPLIED_FILTERS_TXT}
+    page should contain             ${APPLIED_FILTERS_TXT}
+
+#    click element                   ${FILTER_DROPDOWN_PLATFORM}
+#    click element                   ${FILTER_DROPDOWN_STATUS}
+#    click element                   ${FILTER_DROPDOWN_CREATION}
+#    click element                   ${FILTER_CROSS_ICON}
+#    click element                   ${Filter_ICON_SYMBOL}
+#    click button                    ${FILTER_CANCEL_BTN}

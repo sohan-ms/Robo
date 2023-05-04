@@ -17,3 +17,14 @@ ${LOC_DELIVERY_BTN}  xpath=//div[.='Create Delivery']
 ${LOC_SELF_SERVE_DELIVERY_BTN}  //div[.='Self Serve Delivery']
 ${LOC_RULE_BASED_DELIVERY_BTN}  //div[.='Rule Based Delivery']
 
+#Filter panel locators
+${Filter_text}                Filters
+${Filter_ICON_SYMBOL}         xpath=//*[name()='svg' and @class='vod-vod53 vod-vod32']
+${FILTER_DROPDOWN_PLATFORM}   xpath=//div[@data-testid='Platforms-dropdown-icon']//*[name()='svg']
+${FILTER_DROPDOWN_STATUS}     xpath=//div[@data-testid='Status-dropdown-icon']//*[name()='svg']
+${FILTER_DROPDOWN_CREATION}   xpath=//*[name()='svg' and @class='vod-vod124']
+${FILTER_CROSS_ICON}          xpath=//*[name()='svg' and @class='vod-vod50']
+${FILTER_CANCEL_BTN}          CANCEL
+${FILTER_APPLY_BTN}           APPLY
+${CHECKBOX_ELEMENTS}          xpath=(//input[@class='vod-vod129'])
+${APPLIED_FILTERS_TXT}        Applied Filters :

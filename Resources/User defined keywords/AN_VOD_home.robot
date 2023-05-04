@@ -14,3 +14,11 @@ Click on Create Delivery button
 Get the elements present in the headers of the table
     ondemand.navigate to ondemand module
     ondemand.get the headers present in the table
+
+Get the TICKET NO column
+    ondemand.navigate to ondemand module
+    ondemand.get the ticket no's present in the table
+
+Click on the Filter Icon
+    ondemand.navigate to ondemand module
+    ondemand.click on the filter icon
