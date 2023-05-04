@@ -22,12 +22,12 @@ TC_03 Validate the Create Delivery button in OnDemand module
     [Tags]    smoke
     AN_VOD_home.Click on Create Delivery button
 
-TC_03 Validate the 'Ticket no' column which should unique 13 digit numbers
+TC_04 Validate the 'Ticket no' column which should unique 13 digit numbers
     [Documentation]    Test Case 4
     [Tags]    regr
     AN_VOD_home.Get the TICKET NO column
 
-TC_04 Validate the functionality of the Filter icon
+TC_05 Validate the functionality of the Filter icon
     [Documentation]    Test Case 5
-    [Tags]    test
+    [Tags]    smoke
     AN_VOD_home.Click on the Filter Icon

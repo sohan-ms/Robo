@@ -51,6 +51,12 @@ Validate 'Create Delivery' drop down
     click element    ${LOC_DELIVERY_BTN}
     BuiltIn.Wait Until Keyword Succeeds     60 s     1 s       seleniumlibrary.wait until element is visible     ${LOC_SELF_SERVE_DELIVERY_BTN}
     seleniumlibrary.wait until element is visible    ${LOC_RULE_BASED_DELIVERY_BTN}
+    click element        ${LOC_RULE_BASED_DELIVERY_BTN}
+    click button            Cancel
+    click element    ${LOC_DELIVERY_BTN}
+    click element       ${LOC_SELF_SERVE_DELIVERY_BTN}
+    wait until page contains    Cancel
+    go back
 
 Get the headers present in the table
     [Documentation]    This is to fetch the table names
@@ -94,9 +100,10 @@ click on the filter icon
 #    apply filters
     click element                   ${FILTER_DROPDOWN_PLATFORM}
     click element                   ${FILTER_DROPDOWN_STATUS}
-    ${COUNT} =  Get Element Count   xpath=(//input[@class='vod-vod129'])
-    FOR    ${i}     IN RANGE    1   ${COUNT}+1
-        select checkbox    xpath=(//input[@class='vod-vod129'])[${i}]
+#    wait until page contains        xpath=//input[@type='checkbox']
+    ${COUNT} =  Get Element Count   class=vod-MuiIconButton-label
+    FOR    ${i}     IN RANGE    1   ${COUNT}
+        select checkbox    xpath=(//input[@type='checkbox'])[${i}]
     END
     click button                    ${FILTER_APPLY_BTN}
 

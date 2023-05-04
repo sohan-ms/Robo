@@ -19,7 +19,7 @@ ${LOC_RULE_BASED_DELIVERY_BTN}  //div[.='Rule Based Delivery']
 
 #Filter panel locators
 ${Filter_text}                Filters
-${Filter_ICON_SYMBOL}         xpath=//*[name()='svg' and @class='vod-vod53 vod-vod32']
+${Filter_ICON_SYMBOL}         xpath=//div[@data-testid='filter-icon']//*[name()='svg']
 ${FILTER_DROPDOWN_PLATFORM}   xpath=//div[@data-testid='Platforms-dropdown-icon']//*[name()='svg']
 ${FILTER_DROPDOWN_STATUS}     xpath=//div[@data-testid='Status-dropdown-icon']//*[name()='svg']
 ${FILTER_DROPDOWN_CREATION}   xpath=//*[name()='svg' and @class='vod-vod124']
